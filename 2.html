@@ -1,0 +1,11 @@
+<script>
+  function getCameraData() {
+    if (typeof AndroidInterface !== "undefined") {
+      AndroidInterface.getCameraInfo();
+    } else {
+      console.log("Android Interface Not Found - Running in WebView");
+    }
+  }
+</script>
+
+<button onclick="getCameraData()">Get Camera Info</button>
